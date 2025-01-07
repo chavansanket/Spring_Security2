@@ -27,7 +27,7 @@ public class AuthController {
 	//Build Login REST API
 	@PostMapping("/login")
 	public ResponseEntity<AuthResponseDto2> login(@RequestBody LoginDto loginDto){
-		
+		System.out.println("hi");
 		//01 - Receive the token from AuthService
 		String token = authService.login(loginDto);
 		
